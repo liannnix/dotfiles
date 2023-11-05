@@ -7,3 +7,6 @@
 [submodule ".password-store"]
 	path = .password-store
 	url = gitea@git.giran.cyou:liannnix/pass.git
+[submodule "configs"]
+	path = configs
+	url = gitea@git.giran.cyou:liannnix/configs.git
