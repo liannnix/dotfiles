@@ -1,3 +1,4 @@
 *~
 *.swp
 *.swo
+.ssh/known_hosts
