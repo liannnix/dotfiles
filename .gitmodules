@@ -4,3 +4,6 @@
 [submodule "vimwiki"]
 	path = vimwiki
 	url = gitea@git.giran.cyou:liannnix/vimwiki.git
+[submodule ".password-store"]
+	path = .password-store
+	url = gitea@git.giran.cyou:liannnix/pass.git
