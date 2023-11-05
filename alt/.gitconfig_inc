@@ -1,0 +1,9 @@
+[user]
+	name = Andrey Limachko
+	email = liannnix@altlinux.org
+	signingkey = 1D8EEB2E408272C0
+
+[gpg]
+    program = /usr/bin/gpg2
+[core]
+	editor = vim

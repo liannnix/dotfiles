@@ -1,0 +1,17 @@
+[user]
+    name = Andrey Limachko
+    email = liannnix@giran.cyou
+    signingkey = 1A742BE3E6DE6DC2
+[gpg]
+    program = gpg2
+[core]
+    editor = vim
+[commit]
+    gpgsign = true
+
+[includeIf "gitdir:~/alt/"]
+    path = ~/alt/.gitconfig_inc
+[init]
+	defaultBranch = master
+[pull]
+	rebase = false
