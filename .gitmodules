@@ -1,3 +1,6 @@
 [submodule ".config/nvim"]
 	path = .config/nvim
 	url = git@github.com:liannnix/lazyvim-dotfiles.git
+[submodule "vimwiki"]
+	path = vimwiki
+	url = gitea@git.giran.cyou:liannnix/vimwiki.git
