@@ -1,0 +1,6 @@
+.ssh/girar.key
+.ssh/gitea_jenkins
+.ssh/id_rsa
+.ssh/pve
+.ssh/robot_key
+.ssh/yc_serialssh_key
