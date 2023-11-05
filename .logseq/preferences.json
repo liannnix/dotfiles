@@ -1,0 +1,17 @@
+{
+  "theme": null,
+  "themes": {
+    "mode": "light",
+    "light": {
+      "name": "Default Light Theme",
+      "url": null,
+      "description": "Logseq default light theme.",
+      "mode": "light",
+      "selected": true,
+      "group-first": true,
+      "group-desc": "light themes"
+    },
+    "dark": null
+  },
+  "externals": []
+}
