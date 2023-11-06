@@ -1,0 +1,6 @@
+#!/bin/bash
+set -euo pipefail
+
+sudo apt-get update
+sudo apt-get install neovim \
+	python3-module-neovim
