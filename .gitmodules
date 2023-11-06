@@ -13,3 +13,6 @@
 [submodule ".yadm/yadm"]
 	path = .yadm/yadm
 	url = https://github.com/TheLocehiliosan/yadm.git
+[submodule ".local/share/yadm/yadm"]
+	path = .local/share/yadm/yadm
+	url = https://github.com/TheLocehiliosan/yadm.git
