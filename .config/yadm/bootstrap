@@ -1,0 +1,13 @@
+#!/bin/bash
+
+sudo apt-get install neovim \
+	tig \
+	git \
+	gcc \
+	gcc-c++ \
+	ripgrep \
+	fd \
+	fzf \
+	lazygit \
+	pinentry-bash \
+	pinentry-common
