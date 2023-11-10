@@ -1,4 +1,5 @@
 [submodule ".config/nvim"]
+	branch = main
 	path = .config/nvim
 	url = git@github.com:liannnix/lazyvim-dotfiles.git
 [submodule "vimwiki"]
@@ -10,9 +11,6 @@
 [submodule "configs"]
 	path = configs
 	url = gitea@git.giran.cyou:liannnix/configs.git
-[submodule ".yadm/yadm"]
-	path = .yadm/yadm
-	url = https://github.com/TheLocehiliosan/yadm.git
 [submodule ".local/share/yadm/yadm"]
 	path = .local/share/yadm/yadm
 	url = https://github.com/TheLocehiliosan/yadm.git
