@@ -8,4 +8,5 @@
 .gnupg/*
 
 .task/client.*
+.task/ca.*
 .task/creds
