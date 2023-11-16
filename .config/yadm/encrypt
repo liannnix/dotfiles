@@ -6,3 +6,7 @@
 .ssh/yc_serialssh_key
 
 .gnupg/*
+
+.task/client.*
+.task/ca.*
+.task/creds

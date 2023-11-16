@@ -1,0 +1,23 @@
+#!/bin/bash
+
+sudo apt-get install -y neovim \
+	tig \
+	git \
+	gcc \
+	gcc-c++ \
+	ripgrep \
+	fd \
+	fzf \
+	lazygit \
+	pinentry-bash \
+	pinentry-common \
+	tree-sitter-cli \
+	python3-module-neovim \
+	ruby \
+	gem \
+	node \
+	npm \
+	pip \
+	task
+
+pip install tasklib

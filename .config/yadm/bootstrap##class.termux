@@ -1,0 +1,15 @@
+#!/bin/bash
+
+pkg update
+pkg upgrade
+pkg install openssh \
+	git lazygit tig \
+	clang python \
+	neovim fd \
+	wget curl \
+	taskwarrior tasksh \
+	krb5 \
+	yadm \
+	gnupg \
+	man
+pip install pynvim tasklib six packaging
