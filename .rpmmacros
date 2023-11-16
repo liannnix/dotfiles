@@ -1,0 +1,14 @@
+#%_topdir	%homedir/RPM
+#%_tmppath	%homedir/tmp
+
+# %packager	Joe Hacker <joe@email.address>
+# %_gpg_name	joe@email.address
+
+# переопределить местоположение каталога для сборки пакетов
+%_topdir        %homedir/alt/RPM
+# определить местоположение TMP каталога для rpmbuild install пакета вместо $TMPDIR
+%_tmppath       %_topdir/TMP
+
+%packager Andrey Limachko <liannnix@altlinux.org>
+# содержимое gpg_name должно соответствовать вашему uid из вывода gpg -K
+%_gpg_name  Andrey Limachko <liannnix@altlinux.org>
