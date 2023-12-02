@@ -4,6 +4,7 @@
 .ssh/pve
 .ssh/robot_key
 .ssh/yc_serialssh_key
+.ssh/id_ed25519
 
 .gnupg/*
 !.gnupg/gpg-agent.conf
