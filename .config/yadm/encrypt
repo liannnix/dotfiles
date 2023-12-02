@@ -6,6 +6,7 @@
 .ssh/yc_serialssh_key
 
 .gnupg/*
+!.gnupg/gpg-agent.conf
 
 .task/client.*
 .task/ca.*
