@@ -1,0 +1,34 @@
+# ~/.bashrc
+# The individual per-interactive-shell startup file.
+
+# Source global definitions.
+if [ -r /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+## ENV list
+EDITOR=nvim
+
+# Define user specific aliases and functions.
+######## PS1
+function lline() {
+    local len=
+    if test $1 -lt 10; then
+        len=4
+    elif test $1 -lt 100; then
+        len=5
+    else
+        len=6
+    fi
+    printf '%.s─' $(seq $len $(tput cols))
+}
+
+function lcurbranch() {
+    git branch --show-current 2>/dev/null
+}
+#PS1="[\$?]\$(lline \$?)\n[\d \A][\u@\h][\w](\$(lcurbranch))\n\W \$ "
+########
+
+## SSH Agent
+export SSH_AUTH_SOCK=~/.ssh/agent
+ssh-agent -u >/dev/null
