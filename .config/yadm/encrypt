@@ -7,7 +7,7 @@
 .ssh/id_ed25519
 
 .gnupg/*
-!.gnupg/gpg-agent.conf
+!.gnupg/gpg-agent.conf*
 
 .task/client.*
 .task/ca.*

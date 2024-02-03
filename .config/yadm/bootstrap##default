@@ -18,6 +18,8 @@ sudo apt-get install -y neovim \
 	node \
 	npm \
 	pip \
-	task
+	task \
+    tree \
+    translate-shell
 
 pip install tasklib
