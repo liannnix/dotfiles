@@ -32,3 +32,6 @@ function lcurbranch() {
 ## SSH Agent
 export SSH_AUTH_SOCK=~/.ssh/agent
 ssh-agent -u >/dev/null
+
+# Added by Radicle.
+export PATH="$PATH:/home/SMB.BASEALT.RU/liannnix/.radicle/bin"
