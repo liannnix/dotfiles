@@ -12,8 +12,10 @@
 !.gnupg/gpg-agent.conf*
 !.gnupg/common.conf
 !.gnupg/gpg.conf
-.gnupg/private-keys-v1.d
-.gnupg/public-keys.d
+.gnupg/private-keys-v1.d/*
+.gnupg/public-keys.d/*
+!.gnupg/public-keys.d/.#*
+!.gnupg/public-keys.d/*.lock
 .gnupg/pubring.gpg
 .gnupg/pubring.gpg~
 !.gnupg/random_seed
