@@ -2,6 +2,7 @@
 .ssh/gitea_jenkins
 .ssh/id_rsa
 .ssh/pve
+.ssh/pve_admin
 .ssh/robot_key
 .ssh/yc_serialssh_key
 .ssh/id_ed25519
