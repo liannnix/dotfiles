@@ -1,1 +1,5 @@
 export GPG_TTY=$(tty)
+
+## SSH Agent
+export SSH_AUTH_SOCK=~/.ssh/agent
+ssh-agent -u >/dev/null
