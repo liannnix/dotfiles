@@ -1,3 +1,4 @@
+# SSH private keys
 .ssh/girar.key
 .ssh/gitea_jenkins
 .ssh/id_rsa
@@ -7,9 +8,20 @@
 .ssh/yc_serialssh_key
 .ssh/id_ed25519
 
-.gnupg/*
+# GnuPG public and private keyrings
 !.gnupg/gpg-agent.conf*
+!.gnupg/common.conf
+!.gnupg/gpg.conf
+.gnupg/private-keys-v1.d
+.gnupg/public-keys.d
+.gnupg/pubring.gpg
+.gnupg/pubring.gpg~
+!.gnupg/random_seed
+.gnupg/secring.gpg
+!.gnupg/sshcontrol
+.gnupg/trustdb.gpg
 
+# TaskWarrior certificates and credentials
 .task/client.*
 .task/ca.*
 .task/creds
