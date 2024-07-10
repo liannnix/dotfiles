@@ -1,0 +1,20 @@
+[init]
+    defaultBranch = master
+[user]
+    name = Andrey Limachko
+    email = liannnix@giran.cyou
+    signingkey = 1D8EEB2E408272C0
+[gpg]
+    program = gpg2
+[core]
+    editor = nvim
+[commit]
+    gpgsign = true
+[includeIf "gitdir:~/alt/"]
+    path = ~/alt/.gitconfig_inc
+[pull]
+    rebase = false
+[push]
+	autoSetupRemote = true
+[safe]
+	directory = /storage/emulated/0/logseq-saratov-management
