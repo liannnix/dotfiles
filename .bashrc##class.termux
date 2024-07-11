@@ -2,3 +2,6 @@ export GPG_TTY=$(tty)
 
 ## SSH Agent
 eval $(ssh-agent)
+
+# Added by Radicle.
+export PATH="$PATH:/data/data/com.termux/files/home/.radicle/bin"
