@@ -3,7 +3,7 @@
 [user]
     name = Andrey Limachko
     email = liannnix@giran.cyou
-    signingkey = 1D8EEB2E408272C0
+    signingkey = AEA953ED7694558B61382CEF1D8EEB2E408272C0
 [gpg]
     program = gpg2
 [core]
