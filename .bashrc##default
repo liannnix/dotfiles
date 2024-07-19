@@ -35,3 +35,6 @@ ssh-agent -u >/dev/null
 
 # Added by Radicle.
 export PATH="$PATH:/home/SMB.BASEALT.RU/liannnix/.radicle/bin"
+
+# Set tmux title for ssh
+. ~/.scripts/set-tmux-title.sh
