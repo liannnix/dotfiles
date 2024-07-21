@@ -38,3 +38,6 @@ export PATH="$PATH:/home/SMB.BASEALT.RU/liannnix/.radicle/bin"
 
 # Set tmux title for ssh
 . ~/.scripts/set-tmux-title.sh
+
+# SYnc bash history between terminals
+export PROMPT_COMMAND="history -a; history -n"
