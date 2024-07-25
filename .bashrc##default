@@ -41,3 +41,6 @@ export PATH="$PATH:/home/SMB.BASEALT.RU/liannnix/.radicle/bin"
 
 # SYnc bash history between terminals
 export PROMPT_COMMAND="history -a; history -n"
+
+. ~/.scripts/common_functions.sh
+[[ -n "$TMUX" ]] && export PROMPT_COMMAND="$PROMPT_COMMAND; generate_tmux_local_pane_name"
