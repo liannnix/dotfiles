@@ -14,5 +14,7 @@ function generate_tmux_local_pane_name() {
     [ -n "$git_modified" ] && [ $git_modified -gt 0 ] && pane_name="$pane_name [modif: $git_modified]"
     [ -n "$git_untracked" ] && [ $git_untracked -gt 0 ] && pane_name="$pane_name [untrack: $git_untracked]"
     pane_name="$pane_name |"
-    tmux select-pane -T "$pane_name" 2>/dev/null || printf '\033]2;%s\033\\' "$pane_name"
+    [ -n "$TMUX" ] &&
+        tmux select-pane -T "$pane_name" 2>/dev/null ||
+        printf '\033]2;%s\033\\' "$pane_name"
 }
