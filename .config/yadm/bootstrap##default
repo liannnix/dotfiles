@@ -26,5 +26,5 @@ pip install tasklib
 
 homedir="$(realpath ~)"
 sudo cp -rf $homedir/.scripts/ /root/
-sudo cp -rf $homedir/.bashrc /root/
+sudo cp -rf $homedir/.scripts/.bashrc.root /root/.bashrc
 
