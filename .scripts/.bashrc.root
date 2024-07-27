@@ -1,0 +1,34 @@
+# ~/.bashrc
+# The individual per-interactive-shell startup file.
+
+# Source global definitions.
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# Define user specific aliases and functions.
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+alias d='ls'
+alias s='cd ..'
+alias p='cd -'
+
+# Read /etc/inputrc if the variable is not defined.
+[ -n "$INPUTRC" ] || export INPUTRC=/etc/inputrc
+
+ENV=$HOME/.bashrc
+USERNAME="root"
+export USERNAME ENV
+
+## ENV list
+EDITOR=nvim
+
+# Set tmux title for ssh
+. ~/.scripts/set-tmux-title.sh
+
+# SYnc bash history between terminals
+export PROMPT_COMMAND="history -a; history -n"
+
+. ~/.scripts/common_functions.sh
+export PROMPT_COMMAND="$PROMPT_COMMAND; generate_tmux_local_pane_name"
