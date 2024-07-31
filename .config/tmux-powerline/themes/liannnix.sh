@@ -119,10 +119,14 @@ if [ -z "$TMUX_POWERLINE_LEFT_STATUS_SEGMENTS" ]; then
 		#"wan_ip 24 255"
 		#"vcs_branch 29 88"
 		"vcs_branch 235 255"
-		"vcs_compare 60 255"
-		"vcs_staged 64 255"
-		"vcs_modified 9 255"
-		"vcs_others 245 0"
+		#"vcs_compare 60 255"
+		"vcs_compare 235 255"
+		#"vcs_staged 64 255"
+		"vcs_staged 235 255"
+		#"vcs_modified 9 255"
+		"vcs_modified 235 255"
+		#"vcs_others 245 0"
+		"vcs_others 235 255"
 	)
 fi
 
