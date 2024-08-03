@@ -29,18 +29,20 @@ function lcurbranch() {
 #PS1="[\$?]\$(lline \$?)\n[\d \A][\u@\h][\w](\$(lcurbranch))\n\W \$ "
 ########
 
+home_dir="$HOME"
+
 ## SSH Agent
-export SSH_AUTH_SOCK=~/.ssh/agent
+export SSH_AUTH_SOCK="$home_dir/.ssh/agent"
 ssh-agent -u >/dev/null
 
 # Added by Radicle.
-export PATH="$PATH:/home/SMB.BASEALT.RU/liannnix/.radicle/bin"
+export PATH="$PATH:$home_dir/.radicle/bin"
 
 # Set tmux title for ssh
-. ~/.scripts/set-tmux-title.sh
+. "$home_dir/.scripts/set-tmux-title.sh" >/dev/null 2>&1 || true
 
 # SYnc bash history between terminals
 export PROMPT_COMMAND="history -a; history -n"
 
-. ~/.scripts/common_functions.sh
-export PROMPT_COMMAND="$PROMPT_COMMAND; generate_tmux_local_pane_name"
+. "$home_dir/.scripts/common_functions.sh" >/dev/null 2>&1 &&
+    export PROMPT_COMMAND="$PROMPT_COMMAND; (generate_tmux_local_pane_name &)"
