@@ -1,11 +1,11 @@
 # SSH private keys
 .ssh/girar.key
-.ssh/gitea_jenkins
+.ssh/extra/gitea_jenkins
 .ssh/id_rsa
-.ssh/pve
-.ssh/pve_admin
-.ssh/robot_key
-.ssh/yc_serialssh_key
+.ssh/extra/pve
+.ssh/extra/pve_admin
+.ssh/extra/robot_key
+.ssh/extra/yc_serialssh_key
 .ssh/id_ed25519
 
 # GnuPG public and private keyrings
