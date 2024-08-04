@@ -34,9 +34,9 @@ ssh() {
         ssh_user_host="$ssh_user@$ssh_host" ||
         ssh_user_host="$ssh_host"
     tmux select-pane -T "$ssh_user_host"
+    TERM="xterm-256color"
     command ssh "$@"
     generate_tmux_local_pane_name
-    #tmux set-window-option automatic-rename "on" 1> /dev/null
   else
     command ssh "$@"
   fi
