@@ -1,0 +1,31 @@
+# ~/.bashrc
+# The individual per-interactive-shell startup file.
+
+# Source global definitions.
+if [ -r /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+## ENV list
+EDITOR=nvim
+
+## GPG pinentry fix
+export GPG_TTY=$(tty)
+
+home_dir="$HOME"
+
+## SSH Agent
+#export SSH_AUTH_SOCK="$home_dir/.ssh/agent"
+#ssh-agent -u >/dev/null
+
+# Added by Radicle.
+export PATH="$PATH:$home_dir/.radicle/bin"
+
+# Set tmux title for ssh
+. "$home_dir/.scripts/set-tmux-title.sh" >/dev/null 2>&1 || true
+
+# SYnc bash history between terminals
+export PROMPT_COMMAND="history -a; history -n"
+
+. "$home_dir/.scripts/common_functions.sh" >/dev/null 2>&1 &&
+    export PROMPT_COMMAND="$PROMPT_COMMAND; (generate_tmux_local_pane_name &)"
