@@ -1,7 +1,7 @@
 # SSH private keys
 .ssh/girar.key
 .ssh/extra/gitea_jenkins
-.ssh/id_rsa
+.ssh/extra/liannnix_old
 .ssh/extra/pve
 .ssh/extra/pve_admin
 .ssh/extra/robot_key
