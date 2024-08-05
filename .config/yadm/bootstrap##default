@@ -20,7 +20,11 @@ sudo apt-get install -y neovim \
 	pip \
 	task \
     tree \
-    translate-shell
+    translate-shell \
+    kitty \
+    kitty-shell-integration \
+    kitty-terminfo \
+    timg
 
 pip install tasklib
 
