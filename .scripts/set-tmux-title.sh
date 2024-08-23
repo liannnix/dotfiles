@@ -1,3 +1,7 @@
+#!/bin/bash
+
+. ~/.scripts/common_functions.sh
+
 ssh() {
   # grep -w: match command names such as "tmux-2.1" or "tmux: server"
   if ps -p $$ -o ppid= \
@@ -15,10 +19,10 @@ ssh() {
     #                \([^-][^[:space:]]*\) | destination
     #                                   .* | command
     #                                 /\6/ | replace with destination
-    ssh_user=
-    ssh_host=
-    ssh_user_host=
-    out="$(echo "$@" \
+    local ssh_user=
+    local ssh_host=
+    local ssh_user_host=
+    local out="$(echo "$@" \
       | sed -E 's/[[:space:]]*(((-[46AaCfGgKkMNnqsTtVvXxYy])|(-[^[:space:]]*([[:space:]]+[^[:space:]]*)?))[[:space:]]*)*[[:space:]]+([^-][^[:space:]]*).*/\6/')"
     if grep -o '@' >/dev/null 2>&1 <<< $out; then
         ssh_host="$(sed -E '/@/!d; s/^.*@//g' <<< $out)"
@@ -30,11 +34,9 @@ ssh() {
         ssh_user_host="$ssh_user@$ssh_host" ||
         ssh_user_host="$ssh_host"
     tmux select-pane -T "$ssh_user_host"
+    TERM="xterm-256color"
     command ssh "$@"
-    local_host="$(hostnamectl hostname)"
-    local_user="$(id -un)"
-    tmux select-pane -T "$local_user@$local_host"
-    #tmux set-window-option automatic-rename "on" 1> /dev/null
+    generate_tmux_local_pane_name
   else
     command ssh "$@"
   fi

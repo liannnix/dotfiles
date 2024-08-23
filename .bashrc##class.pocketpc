@@ -15,8 +15,8 @@ export GPG_TTY=$(tty)
 home_dir="$HOME"
 
 ## SSH Agent
-export SSH_AUTH_SOCK="$home_dir/.ssh/agent"
-ssh-agent -u >/dev/null
+#export SSH_AUTH_SOCK="$home_dir/.ssh/agent"
+#ssh-agent -u >/dev/null
 
 # Added by Radicle.
 export PATH="$PATH:$home_dir/.radicle/bin"

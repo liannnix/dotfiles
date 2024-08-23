@@ -20,6 +20,15 @@ sudo apt-get install -y neovim \
 	pip \
 	task \
     tree \
-    translate-shell
+    translate-shell \
+    kitty \
+    kitty-shell-integration \
+    kitty-terminfo \
+    timg
 
 pip install tasklib
+
+homedir="$(realpath ~)"
+sudo cp -rf $homedir/.scripts/ /root/
+sudo cp -rf $homedir/.scripts/.bashrc.root /root/.bashrc
+

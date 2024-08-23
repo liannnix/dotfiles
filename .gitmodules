@@ -14,3 +14,7 @@
 [submodule ".local/share/yadm/yadm"]
 	path = .local/share/yadm/yadm
 	url = https://github.com/TheLocehiliosan/yadm.git
+[submodule "journal"]
+	path = journal
+	url = gitea@git.giran.cyou:liannnix/journal.git
+	branch = master
