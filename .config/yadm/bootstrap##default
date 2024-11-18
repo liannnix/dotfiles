@@ -31,7 +31,8 @@ sudo apt-get install -y neovim \
     gear \
     hasher \
     gear-remotes \
-    wl-clipboard
+    wl-clipboard \
+    gcr4
 
 pip install tasklib
 
