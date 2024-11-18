@@ -24,7 +24,8 @@ sudo apt-get install -y neovim \
     kitty \
     kitty-shell-integration \
     kitty-terminfo \
-    timg
+    timg \
+    wl-clipboard
 
 pip install tasklib
 
