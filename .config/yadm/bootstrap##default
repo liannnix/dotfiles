@@ -30,7 +30,8 @@ sudo apt-get install -y neovim \
     shellcheck \
     gear \
     hasher \
-    gear-remotes
+    gear-remotes \
+    wl-clipboard
 
 pip install tasklib
 
