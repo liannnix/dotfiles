@@ -44,7 +44,7 @@ set -g set-titles on
 set -g set-titles-string "|#I:#P - #W - #T|"
 
 # Pane title bar
-set -g pane-border-status top
+#set -g pane-border-status top
 #set -g pane-border-format "#{pane_index} #{pane_title} #{pane_current_path}"
 
 # Windows renaming
