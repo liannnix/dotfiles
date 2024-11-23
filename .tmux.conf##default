@@ -55,11 +55,15 @@ set-option -wg automatic-rename-format '#{s/^\| ([^ ]*) \|.*$/\1/:pane_title}'
 bind-key -T copy-mode-vi 'v' send -X begin-selection
 #bind-key -T copy-mode-vi 'y' send -X copy-selection-and-cancel
 bind-key -T copy-mode-vi 'y' send -X copy-selection
+bind-key -T copy-mode-vi 'Y' send -X copy-line
 
 # Remap ctrl+b to ctrl+a
 #unbind-key C-b
 #set-option -g prefix C-a
-#bind-key C-a send-prefix
+bind-key -n C-a send-prefix
+
+# Enable/disable mouse mode
+bind-key M set mouse 
 
 set-option -g @ssh-split-keep-remote-cwd "true"
 set-option -g @ssh-split-strip-cmd "true"
@@ -96,6 +100,8 @@ set -g @tmux-translator-from "en"                           # translate from
 set -g @tmux-translator-to "ru"                             # translate to
 set -g @tmux-translator-engine "google"                     # engine
 #set -g @tmux-translator-engine "google|ciba|youdao"         # multiple engines
+#set -g @floax-bind-menu '-n M-m'
+set -g @floax-bind '-n M-p'
 
 # List of plugins
 set -g @plugin 'tmux-plugins/tpm'
@@ -112,8 +118,9 @@ set -g @plugin 'laktak/extrakto'
 set -g @plugin 'pschmitt/tmux-ssh-split'
 #set -g @plugin 'tmux-plugins/tmux-sidebar'
 set -g @plugin 'kiyoon/treemux'
-#set -g @plugin 'erikw/tmux-powerline'
-set -g @plugin "janoamaral/tokyo-night-tmux"
+set -g @plugin 'erikw/tmux-powerline'
+#set -g @plugin "janoamaral/tokyo-night-tmux"
+set -g @plugin 'omerxx/tmux-floax'
 
 # Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
 set-environment -g TMUX_PLUGIN_MANAGER_PATH "~/.tmux/plugins/"

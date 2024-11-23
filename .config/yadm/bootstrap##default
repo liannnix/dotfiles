@@ -1,34 +1,41 @@
 #!/bin/bash
 
 sudo apt-get install -y neovim \
-	tig \
-	git \
-	gcc \
-	gcc-c++ \
-	ripgrep \
-	fd \
-	fzf \
-	lazygit \
-	pinentry-bash \
-	pinentry-common \
-	tree-sitter-cli \
-	python3-module-neovim \
-	ruby \
-	gem \
-	node \
-	npm \
-	pip \
-	task \
+    tig \
+    git \
+    gcc \
+    gcc-c++ \
+    ripgrep \
+    fd \
+    fzf \
+    lazygit \
+    pinentry-bash \
+    pinentry-common \
+    tree-sitter-cli \
+    python3-module-neovim \
+    ruby \
+    gem \
+    node \
+    npm \
+    pip \
+    task \
     tree \
     translate-shell \
     kitty \
     kitty-shell-integration \
     kitty-terminfo \
-    timg
+    timg \
+    password-store \
+    qtpass \
+    shellcheck \
+    gear \
+    hasher \
+    gear-remotes \
+    wl-clipboard \
+    gcr4
 
 pip install tasklib
 
 homedir="$(realpath ~)"
 sudo cp -rf $homedir/.scripts/ /root/
 sudo cp -rf $homedir/.scripts/.bashrc.root /root/.bashrc
-
