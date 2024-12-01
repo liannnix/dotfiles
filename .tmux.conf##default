@@ -45,15 +45,6 @@ set -g status off
 set -g set-titles on
 set -g set-titles-string "|#I:#P - #W - #T|"
 
-# Pane title bar
-set -g pane-border-status top
-#set -g pane-border-format "#{pane_index} #{pane_title} #{pane_current_path}"
-
-# Windows renaming
-set-option -wg automatic-rename on
-#set-option -wg automatic-rename-format "#{s/^| ([^ ]*) .*$/\1/:pane_title}"
-set-option -wg automatic-rename-format '#{s/^\| ([^ ]*) \|.*$/\1/:pane_title}'
-
 bind-key -T copy-mode-vi 'v' send -X begin-selection
 #bind-key -T copy-mode-vi 'y' send -X copy-selection-and-cancel
 bind-key -T copy-mode-vi 'y' send -X copy-selection
@@ -138,3 +129,11 @@ run '~/.tmux/plugins/tpm/bin/install_plugins'
 run '~/.tmux/plugins/tpm/bin/update_plugins all'
 run '~/.tmux/plugins/tpm/tpm'
 
+# Pane title bar
+set -g pane-border-status top
+#set -g pane-border-format "#{pane_index} #{pane_title} #{pane_current_path}"
+
+# Windows renaming
+set-option -wg automatic-rename on
+#set-option -wg automatic-rename-format "#{s/^| ([^ ]*) .*$/\1/:pane_title}"
+set-option -wg automatic-rename-format '#{s/^\| ([^ ]*) \|.*$/\1/:pane_title}'
