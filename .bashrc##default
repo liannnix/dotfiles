@@ -14,8 +14,8 @@ export GPG_TTY=$(tty)
 
 home_dir="$HOME"
 
-# Added by Radicle.
 export PATH="$PATH:$home_dir/.radicle/bin"
+export PATH="$PATH:$home_dir/.local/bin"
 
 # Set tmux title for ssh
 . "$home_dir/.scripts/set-tmux-title.sh" >/dev/null 2>&1 || true
