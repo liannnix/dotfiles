@@ -37,6 +37,7 @@ ssh() {
     TERM="xterm-256color"
     command ssh "$@"
     generate_tmux_local_pane_name
+    TERM="screen-256color"
   else
     command ssh "$@"
   fi

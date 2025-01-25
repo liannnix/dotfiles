@@ -14,12 +14,8 @@ export GPG_TTY=$(tty)
 
 home_dir="$HOME"
 
-## SSH Agent
-#export SSH_AUTH_SOCK="$home_dir/.ssh/agent"
-#ssh-agent -u >/dev/null
-
-# Added by Radicle.
 export PATH="$PATH:$home_dir/.radicle/bin"
+export PATH="$PATH:$home_dir/.local/bin"
 
 # Set tmux title for ssh
 . "$home_dir/.scripts/set-tmux-title.sh" >/dev/null 2>&1 || true
@@ -31,3 +27,12 @@ export PROMPT_COMMAND="history -a; history -n"
     export PROMPT_COMMAND="$PROMPT_COMMAND; (generate_tmux_local_pane_name &)"
 
 export QT_STYLE_OVERRIDE=adwaita-dark
+export QT_AUTO_SCREEN_SCALE_FACTOR=1
+export QT_SCALE_FACTOR=1.4
+#export QT_WAYLAND_FORCE_DPI=96
+export QT_QPA_PLATFORM=wayland
+export QT_QPA_PLATFORMTHEME=gnome
+#QT_QPA_PLATFORMTHEME=qt6ct
+export QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1
+
+alias tmux='TERM=xterm-256color tmux'
