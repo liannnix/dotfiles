@@ -1,0 +1,3 @@
+PBS_REPOSITORY='<user>@pbs!<token name>@<PVE backup server>:<datastore>'
+PBS_FINGERPRINT='<fingerprint>'
+PBS_PASSWORD='<API token>'

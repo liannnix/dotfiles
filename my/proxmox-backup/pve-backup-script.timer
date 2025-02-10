@@ -1,0 +1,9 @@
+[Unit]
+Description=Backup files to PVE Backup server daily
+
+[Timer]
+OnBootSec=60min
+OnUnitActiveSec=24h
+
+[Install]
+WantedBy=timers.target
