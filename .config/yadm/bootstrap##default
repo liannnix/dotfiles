@@ -1,16 +1,18 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 # Useful apps
-sudo apt-get install -y git tig translate-shell task tree
+sudo apt-get install -y git tig translate-shell task tree progress
 
 # Alt packages build environment
-sudo apt-get install -y gear hasher gear-remotes gcc gcc-c++
+sudo apt-get install -y gear hasher gear-remotes gcc gcc-c++ \
+                        meson
+sudo hasher-useradd "$USER"
 
 # LazyVim
 sudo apt-get install -y neovim python3-module-neovim \
     			ripgrep fd fzf \
-    			lazygit timg \
-    			tree-sitter-cli \
+    			lazygit timg getnf \
+    			tree-sitter-cli bear \
     			ruby gem node npm pip \
     			shellcheck
 
@@ -19,8 +21,8 @@ sudo apt-get install -y pinentry-bash pinentry-common
 
 # Copy bashrc to root
 homedir="$(realpath ~)"
-sudo cp -rf $homedir/.scripts/ /root/
-sudo cp -rf $homedir/.scripts/.bashrc.root /root/.bashrc
+sudo cp -rf "$homedir"/.scripts/ /root/
+sudo cp -rf "$homedir"/.scripts/.bashrc.root /root/.bashrc
 
 # Wayland hack
 sudo apt-get install -y wl-clipboard
