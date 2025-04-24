@@ -1,41 +1,50 @@
-#!/bin/bash
+#!/usr/bin/bash
 
-sudo apt-get install -y neovim \
-    tig \
-    git \
-    gcc \
-    gcc-c++ \
-    ripgrep \
-    fd \
-    fzf \
-    lazygit \
-    pinentry-bash \
-    pinentry-common \
-    tree-sitter-cli \
-    python3-module-neovim \
-    ruby \
-    gem \
-    node \
-    npm \
-    pip \
-    task \
-    tree \
-    translate-shell \
-    kitty \
-    kitty-shell-integration \
-    kitty-terminfo \
-    timg \
-    password-store \
-    qtpass \
-    shellcheck \
-    gear \
-    hasher \
-    gear-remotes \
-    wl-clipboard \
-    gcr4
+# Useful apps
+sudo apt-get install -y git tig translate-shell task tree progress
 
-pip install tasklib
+# Alt packages build environment
+sudo apt-get install -y gear hasher gear-remotes gcc gcc-c++ \
+                        meson
+sudo hasher-useradd "$USER"
 
+# LazyVim
+sudo apt-get install -y neovim python3-module-neovim \
+    			ripgrep fd fzf \
+    			lazygit timg getnf \
+    			tree-sitter-cli bear \
+    			ruby gem node npm pip \
+    			shellcheck
+
+# OpenGPG hack
+sudo apt-get install -y pinentry-bash pinentry-common
+
+# Copy bashrc to root
 homedir="$(realpath ~)"
-sudo cp -rf $homedir/.scripts/ /root/
-sudo cp -rf $homedir/.scripts/.bashrc.root /root/.bashrc
+sudo cp -rf "$homedir"/.scripts/ /root/
+sudo cp -rf "$homedir"/.scripts/.bashrc.root /root/.bashrc
+
+# Wayland hack
+sudo apt-get install -y wl-clipboard
+
+# Gnome: enable gnome-keyring for ssh keys
+sudo apt-get install -y gcr4
+systemctl enable --user gcr-ssh-agent.socket
+
+# Gnome: extensions
+sudo apt-get install -y gnome-shell-extension-caffeine \
+			gnome-shell-extension-clipboard-indicator \
+			gnome-shell-extension-extension-list \
+			gnome-shell-extension-gpaste \
+			gnome-shell-extension-gsconnect
+
+# Password-store
+sudo apt-get install -y password-store qtpass
+sudo apt-repo test 314741 # password-store-otp
+sudo apt-get install -y oathtool
+
+# Kitty
+#sudo apt-get install -y kitty kitty-shell-integration kitty-terminfo 
+
+# Remove colored root prompt
+sudo apt-get remove -y color-prompt-and-man

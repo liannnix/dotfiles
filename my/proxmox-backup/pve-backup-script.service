@@ -1,0 +1,11 @@
+[Unit]
+Description=Backup files to PVE Backup server
+After=network.target network-online.target
+
+[Service]
+Type=oneshot
+EnvironmentFile=-/etc/sysconfig/pve-backup-script
+ExecStart=/usr/bin/proxmox-backup-client backup <backup name>.pxar:/<backuping dir>/ --ns <namespace> --change-detection-mode=metadata
+
+[Install]
+WantedBy=multi-user.target
