@@ -1,8 +1,0 @@
-# see https://github.com/sigoden/aichat/blob/main/config.example.yaml
-
-model: deepseek:deepseek-chat
-clients:
-- type: openai-compatible
-  name: deepseek
-  api_base: https://api.deepseek.com
-  api_key: sk-df243420f6c146e592db6d936e16bf4f

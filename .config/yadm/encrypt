@@ -27,3 +27,6 @@
 .task/client.*
 .task/ca.*
 .task/creds
+
+# aichat API Keys
+.config/aichat/config.yaml
