@@ -1,8 +1,7 @@
 packager="Andrey Limachko <liannnix@altlinux.org>"
-USER=liannnix
-workdir="/tmp/.private/liannnix/"
-#workdir="/home/liannnix/alt/hasher-dir"
+workdir="/tmp/.private/$USER/"
+#workdir="/home/$USER/alt/hasher-dir"
 target=x86_64
 mount=/dev/pts,/proc
 known_mountpoints=/proc,/dev/pts,/sys
-def_repo=/home/SMB.BASEALT.RU/liannnix/alt/repo
+def_repo="$HOME/alt/repo"
