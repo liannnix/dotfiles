@@ -7,11 +7,44 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "proxy": "socks5://localhost:1080",
   "show_edit_predictions": false,
   "features": {
     "edit_prediction_provider": "zed"
   },
   "assistant": {
+    "profiles": {
+      "write": {
+        "name": "Write",
+        "tools": {
+          "batch_tool": false,
+          "code_actions": false,
+          "code_symbols": false,
+          "contents": false,
+          "copy_path": false,
+          "create_file": true,
+          "delete_path": false,
+          "diagnostics": true,
+          "edit_file": true,
+          "fetch": true,
+          "list_directory": true,
+          "move_path": false,
+          "now": false,
+          "find_path": true,
+          "read_file": true,
+          "grep": true,
+          "rename": false,
+          "symbol_info": false,
+          "terminal": true,
+          "thinking": true,
+          "web_search": true,
+          "create_directory": true
+        },
+        "enable_all_context_servers": true,
+        "context_servers": {}
+      }
+    },
+    "always_allow_tool_actions": false,
     "dock": "right",
     "default_model": {
       "provider": "deepseek",

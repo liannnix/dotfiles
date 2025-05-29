@@ -36,3 +36,4 @@ export QT_QPA_PLATFORMTHEME=gnome
 export QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1
 
 alias tmux='TERM=xterm-256color tmux'
+alias sudoedit="$home_dir/.scripts/sudoedit_autosave.sh"

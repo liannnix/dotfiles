@@ -2,9 +2,6 @@
 	branch = main
 	path = .config/nvim
 	url = git@github.com:liannnix/lazyvim-dotfiles.git
-[submodule "vimwiki"]
-	path = vimwiki
-	url = gitea@git.giran.cyou:liannnix/vimwiki.git
 [submodule ".password-store"]
 	path = .password-store
 	url = gitea@git.giran.cyou:liannnix/pass.git
@@ -14,7 +11,7 @@
 [submodule ".local/share/yadm/yadm"]
 	path = .local/share/yadm/yadm
 	url = https://github.com/TheLocehiliosan/yadm.git
-[submodule "journal"]
-	path = journal
-	url = gitea@git.giran.cyou:liannnix/journal.git
+[submodule "wiki"]
+	path = wiki
+	url = gitea@git.giran.cyou:liannnix/wiki.git
 	branch = master

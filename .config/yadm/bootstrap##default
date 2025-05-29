@@ -1,50 +1,77 @@
 #!/usr/bin/bash
 
-# Useful apps
-sudo apt-get install -y git tig translate-shell task tree progress
+# =============================================
+# Установка полезных утилит для разработки
+# =============================================
+sudo apt-get install -y \
+				git tig translate-shell task tree progress inotify-tools
 
-# Alt packages build environment
-sudo apt-get install -y gear hasher gear-remotes gcc gcc-c++ \
-                        meson
+# =============================================
+# Настройка окружения для сборки пакетов ALT Linux
+# =============================================
+sudo apt-get install -y \
+				gear hasher gear-remotes gcc gcc-c++ meson
 sudo hasher-useradd "$USER"
 
-# LazyVim
-sudo apt-get install -y neovim python3-module-neovim \
-    			ripgrep fd fzf \
-    			lazygit timg getnf \
-    			tree-sitter-cli bear \
-    			ruby gem node npm pip \
-    			shellcheck
+# =============================================
+# Установка зависимостей для LazyVim и сопутствующих инструментов
+# =============================================
+sudo apt-get install -y \
+				neovim python3-module-neovim \
+				ripgrep fd fzf \
+				lazygit timg getnf \
+				tree-sitter-cli bear \
+				ruby gem node npm pip \
+				shellcheck
 
-# OpenGPG hack
-sudo apt-get install -y pinentry-bash pinentry-common
+# =============================================
+# Настройка OpenGPG (альтернативный pinentry)
+# =============================================
+sudo apt-get install -y \
+				pinentry-bash pinentry-common
 
-# Copy bashrc to root
+# =============================================
+# Копирование настроек bash для root пользователя
+# =============================================
 homedir="$(realpath ~)"
 sudo cp -rf "$homedir"/.scripts/ /root/
 sudo cp -rf "$homedir"/.scripts/.bashrc.root /root/.bashrc
 
-# Wayland hack
+# =============================================
+# Настройка работы с буфером обмена в Wayland
+# =============================================
 sudo apt-get install -y wl-clipboard
 
-# Gnome: enable gnome-keyring for ssh keys
+# =============================================
+# Настройка Gnome Keyring для хранения SSH ключей
+# =============================================
 sudo apt-get install -y gcr4
 systemctl enable --user gcr-ssh-agent.socket
 
-# Gnome: extensions
-sudo apt-get install -y gnome-shell-extension-caffeine \
-			gnome-shell-extension-clipboard-indicator \
-			gnome-shell-extension-extension-list \
-			gnome-shell-extension-gpaste \
-			gnome-shell-extension-gsconnect
+# =============================================
+# Установка полезных расширений Gnome
+# =============================================
+sudo apt-get install -y \
+				gnome-shell-extension-caffeine \
+				gnome-shell-extension-clipboard-indicator \
+				gnome-shell-extension-extension-list \
+				gnome-shell-extension-gpaste \
+				gnome-shell-extension-gsconnect
 
-# Password-store
-sudo apt-get install -y password-store qtpass
-sudo apt-repo test 314741 # password-store-otp
+# =============================================
+# Настройка менеджера паролей
+# =============================================
+sudo apt-get install -y \
+				password-store qtpass
+sudo apt-repo test 314741  # репозиторий для password-store-otp
 sudo apt-get install -y oathtool
 
-# Kitty
-#sudo apt-get install -y kitty kitty-shell-integration kitty-terminfo 
+# =============================================
+# Установка терминала Kitty (закомментировано)
+# =============================================
+# sudo apt-get install -y kitty kitty-shell-integration kitty-terminfo
 
-# Remove colored root prompt
+# =============================================
+# Отключение цветного приглашения root
+# =============================================
 sudo apt-get remove -y color-prompt-and-man
