@@ -1,0 +1,11 @@
+{
+    "local_port" :1080,
+    "mode": "tcp_and_udp",
+    "server": "88.147.142.191",
+    "server_port": 58388,
+    "dns": "10.0.0.1",
+    "password": "NCYP93tTjwiAkc4r",
+    "method": "aes-256-cfb",
+    "fast_open": true,
+    "timeout": 86400
+}
