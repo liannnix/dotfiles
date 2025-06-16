@@ -1,0 +1,925 @@
+?
+cable_diag ports
+cd
+cfm linktrace
+cfm lock md
+cfm loopback
+change drive
+clear
+clear address_binding dhcp_snoop binding_entry ports
+clear address_binding nd_snoop binding_entry ports
+clear arptable
+clear attack_log
+clear cfm pkt_cnt
+clear counters
+clear ethernet_oam ports
+clear fdb
+clear igmp_snooping data_driven_group
+clear igmp_snooping statistics counter
+clear jwac auth_state
+clear log
+clear mac_based_access_control auth_state
+clear mld_snooping data_driven_group
+clear mld_snooping statistics counter
+clear port_security_entry
+clear wac auth_state
+config 802.1p default_priority
+config 802.1p user_priority
+config 802.1x auth_mode
+config 802.1x auth_parameter ports
+config 802.1x auth_protocol
+config 802.1x authorization attributes radius
+config 802.1x capability ports
+config 802.1x fwd_pdu ports
+config 802.1x fwd_pdu system
+config 802.1x guest_vlan ports
+config 802.1x init
+config 802.1x max_users
+config 802.1x reauth
+config aaa server_group
+config access_profile
+config account
+config accounting
+config accounting service
+config accounting service command
+config address_binding dhcp snooping ports
+config address_binding dhcp snooping recovery_timer
+config address_binding dhcp_snoop max_entry ports
+config address_binding ip_mac ipaddress
+config address_binding ip_mac ipv6address
+config address_binding ip_mac ports
+config address_binding nd_snoop ports
+config address_binding recover_learning ports
+config admin local_enable
+config arp_aging time
+config arp_spoofing_prevention
+config arpentry
+config authen application
+config authen parameter attempt
+config authen parameter response_timeout
+config authen server_group
+config authen server_host
+config authen_enable
+config authen_login
+config authentication guest_vlan
+config authentication mac_format
+config authentication ports
+config authentication server failover
+config backup
+config bandwidth_control
+config box_id current_box_id
+config box_priority current_box_id
+config bpdu_protection
+config bpdu_protection ports
+config bpdu_protection recovery_timer
+config cfm ais md
+config cfm lock md
+config cfm ma
+config cfm md
+config cfm mep
+config cfm mp_ltr_all
+config cfm ports
+config cfm trap
+config command_history
+config command_prompt
+config configuration
+config configuration trap
+config cpu access_profile profile_id
+config cpu_filter l3_control_pkt
+config ddm
+config ddm ports
+config dhcp_local_relay vlan
+config dhcp_local_relay vlan vlanid
+config dhcp_relay
+config dhcp_relay add ipif
+config dhcp_relay add vlanid
+config dhcp_relay delete ipif
+config dhcp_relay delete vlanid
+config dhcp_relay option_60 add string
+config dhcp_relay option_60 default
+config dhcp_relay option_60 delete
+config dhcp_relay option_60 state
+config dhcp_relay option_61 add
+config dhcp_relay option_61 default
+config dhcp_relay option_61 delete
+config dhcp_relay option_61 state
+config dhcp_relay option_82 check
+config dhcp_relay option_82 circuit_id
+config dhcp_relay option_82 policy
+config dhcp_relay option_82 remote_id
+config dhcp_relay option_82 state
+config dhcp_relay server_cvid
+config dhcpv6_relay
+config dhcpv6_relay hop_count
+config dhcpv6_relay ipif
+config dhcpv6_relay option_37
+config dos_prevention dos_type
+config dos_prevention log
+config dos_prevention trap
+config dot1v_protocol_group
+config dscp map
+config dscp trust
+config dst
+config duld ports
+config eee ports
+config egress_access_profile
+config egress_flow_meter
+config erps log
+config erps raps_vlan
+config erps trap
+config ethernet_oam ports
+config execute_config time_range
+config fan trap state
+config fdb aging_time
+config filter dhcp_server
+config filter dhcp_server log
+config filter dhcp_server trap
+config filter extensive_netbios
+config filter netbios
+config filter rpc_portmapper
+config firmware image
+config flow_meter
+config gratuitous_arp learning
+config gratuitous_arp send dup_ip_detected
+config gratuitous_arp send ipif_status_up
+config gratuitous_arp send periodically ipif
+config greeting_message
+config gvrp
+config igmp access_authentication ports
+config igmp_snooping
+config igmp_snooping data_driven_learning
+config igmp_snooping data_driven_learning max_learned_entry
+config igmp_snooping multicast_vlan
+config igmp_snooping multicast_vlan forward_unmatched
+config igmp_snooping multicast_vlan_group
+config igmp_snooping multicast_vlan_group_profile
+config igmp_snooping querier
+config igmp_snooping rate_limit
+config igmp_snooping static_group
+config ipif
+config ipv6 nd ns ipif
+config jwac
+config jwac authenticate_page
+config jwac authentication_page element
+config jwac authorization attributes
+config jwac ports
+config jwac quarantine_server_error_timeout
+config jwac radius_protocol
+config jwac redirect
+config jwac switch_http_port
+config jwac update_server
+config jwac user
+config jwac virtual_ip
+config l2protocol_tunnel ports
+config lacp_port
+config led state
+config limited_multicast_addr
+config link_aggregation algorithm
+config link_aggregation group_id
+config lldp
+config lldp forward_message
+config lldp notification_interval
+config lldp ports
+config lldp_med fast_start repeat_count
+config lldp_med log state
+config lldp_med notification topo_change ports
+config lldp_med ports
+config log_save_timing
+config loopdetect
+config loopdetect log state
+config loopdetect ports
+config loopdetect trap
+config mac_based_access_control authorization attributes
+config mac_based_access_control guest_vlan ports
+config mac_based_access_control log state
+config mac_based_access_control max_users
+config mac_based_access_control method
+config mac_based_access_control password
+config mac_based_access_control password_type
+config mac_based_access_control ports
+config mac_based_access_control trap state
+config mac_based_access_control_local mac
+config mac_notification
+config mac_notification ports
+config max_mcast_group
+config mcast_filter_profile
+config mcast_filter_profile ipv6
+config mirror group_id
+config mirror port
+config mld_snooping
+config mld_snooping data_driven_learning
+config mld_snooping data_driven_learning max_learned_entry
+config mld_snooping mrouter_ports
+config mld_snooping mrouter_ports_forbidden
+config mld_snooping multicast_vlan
+config mld_snooping multicast_vlan forward_unmatched
+config mld_snooping multicast_vlan_group
+config mld_snooping multicast_vlan_group_profile
+config mld_snooping querier
+config mld_snooping rate_limit
+config mld_snooping static_group
+config multicast vlan_filtering_mode
+config multicast_fdb
+config nlb multicast_fdb
+config nlb unicast_fdb
+config per_queue bandwidth_control
+config poe ports
+config poe system
+config port dot1v ports
+config port_group
+config port_security log state
+config port_security ports
+config port_security system max_learning_addr
+config port_security trap state
+config port_security vlan
+config port_vlan
+config ports
+config power trap state
+config power_saving hibernation
+config power_saving led
+config power_saving mode
+config power_saving port
+config pppoe circuit_id_insertion ports
+config pppoe circuit_id_insertion state
+config private_vlan
+config qinq ignore_strip_outer_tag state
+config qinq inner_tpid
+config qinq ports
+config radius
+config radius add
+config radius delete
+config radius server_host
+config rmon trap
+config router_ports
+config router_ports_forbidden
+config rspan vlan
+config safeguard_engine
+config scheduling
+config scheduling_mechanism
+config serial_port
+config sflow analyzer_server
+config sflow counter_poller ports
+config sflow flow_sampler ports
+config sim
+config sim trap
+config sim_group
+config smtp
+config snmp coldstart_traps
+config snmp engineID
+config snmp linkchange_traps ports
+config snmp system_contact
+config snmp system_location
+config snmp system_name
+config snmp warmstart_traps
+config sntp
+config sntp ipv6server
+config ssh algorithm
+config ssh authmode
+config ssh publickey bypass_login_screen state
+config ssh server
+config ssh user
+config ssl cachetimeout
+config ssl certificate chain
+config stacking force_master_role state
+config stacking log state
+config stacking trap state
+config stacking_mode
+config stp
+config stp instance_id
+config stp mst_config_id
+config stp mst_ports
+config stp ports
+config stp priority
+config stp trap
+config stp version
+config surveillance_vlan aging_time
+config surveillance_vlan log state
+config surveillance_vlan oui
+config surveillance_vlan ports
+config surveillance_vlan priority
+config syslog host
+config syslog source_ipif
+config system_severity
+config tacacs server_host
+config tacacs+ server_host
+config temperature
+config temperature threshold
+config terminal width
+config time
+config time_range
+config time_zone
+config traffic control
+config traffic control auto_recover_time
+config traffic control log state
+config traffic trap
+config traffic_segmentation
+config trap source_ipif
+config trusted_host
+config udp_helper add ipif
+config udp_helper delete ipif
+config udp_helper udp_port add
+config udp_helper udp_port delete
+config vlan
+config vlan vlanid
+config vlan_trunk ports
+config voice_vlan aging_time
+config voice_vlan log state
+config voice_vlan oui
+config voice_vlan ports
+config voice_vlan priority
+config wac authentication_page element
+config wac authorization attributes
+config wac clear_default_redirpath
+config wac default_redirpath
+config wac method
+config wac ports
+config wac switch_http_port
+config wac user
+config wac virtual_ip
+config wred ports
+config wred profile
+config xtacacs server_host
+copy
+create 802.1x guest_vlan
+create 802.1x user
+create aaa server_group
+create access_profile profile_id
+create account
+create accounting method_list_name
+create address_binding ip_mac ipaddress
+create address_binding ip_mac ipv6address
+create arpentry
+create authen server_group
+create authen server_host
+create authen_enable method_list_name
+create authen_login method_list_name
+create authentication guest_vlan
+create backup
+create cfm ma
+create cfm md
+create cfm mep
+create cpu access_profile profile_id
+create dot1v_protocol_group group_id
+create egress_access_profile profile_id
+create erps raps_vlan
+create execute_config time_range
+create fdb
+create fdb vlanid
+create igmp_snooping multicast_vlan
+create igmp_snooping multicast_vlan_group_profile
+create igmp_snooping static_group
+create ipif
+create iproute
+create ipv6 neighbor_cache ipif
+create ipv6route
+create jwac user
+create link_aggregation group_id
+create mac_based_access_control
+create mac_based_access_control_local mac
+create mac_based_vlan mac_address
+create mcast_filter_profile
+create mirror group_id
+create mld_snooping multicast_vlan
+create mld_snooping multicast_vlan_group_profile
+create mld_snooping static_group
+create multicast_fdb
+create nlb multicast_fdb
+create nlb unicast_fdb
+create port_group id
+create radius server_host
+create rspan vlan
+create sflow analyzer_server
+create sflow counter_poller ports
+create sflow flow_sampler ports
+create snmp
+create snmp community
+create snmp community_masking view
+create snmp group
+create snmp user
+create snmp view
+create stp instance_id
+create syslog host
+create tacacs server_host
+create tacacs+ server_host
+create trusted_host
+create vlan
+create vlan vlanid
+create vlan_translation ports
+create wac user
+create wred profile
+create xtacacs server_host
+debug address_binding
+debug buffer
+debug clear cpu port counter
+debug config error_reboot
+debug config state
+debug dhcpv6_client output
+debug dhcpv6_client packet
+debug dhcpv6_client state disable
+debug dhcpv6_client state enable
+debug dhcpv6_relay hop_count state
+debug dhcpv6_relay output
+debug dhcpv6_relay packet
+debug dhcpv6_relay state disable
+debug dhcpv6_relay state enable
+debug error_log
+debug output
+debug show address_binding binding_state_table
+debug show cpu port counter
+debug show error_reboot state
+debug show jwac auth_info
+debug show status
+debug stp clear counter
+debug stp config ports
+debug stp show counter
+debug stp show flag
+debug stp show information
+debug stp state
+del
+delete 802.1x guest_vlan
+delete 802.1x user
+delete aaa server_group
+delete aaa server_host
+delete access_profile
+delete account
+delete accounting method_list_name
+delete address_binding blocked
+delete address_binding ip_mac
+delete arpentry
+delete authen server_group
+delete authen server_host
+delete authen_enable method_list_name
+delete authen_login method_list_name
+delete authentication guest_vlan
+delete backup
+delete cfm linktrace
+delete cfm ma
+delete cfm md
+delete cfm mep
+delete cpu access_profile
+delete dot1v_protocol_group
+delete egress_access_profile
+delete erps raps_vlan
+delete execute_config
+delete fdb
+delete igmp_snooping multicast_vlan
+delete igmp_snooping multicast_vlan_group_profile
+delete igmp_snooping static_group
+delete ipif
+delete iproute
+delete ipv6 neighbor_cache ipif
+delete ipv6route
+delete jwac
+delete link_aggregation group_id
+delete mac_based_access_control
+delete mac_based_access_control_local
+delete mac_based_vlan
+delete mcast_filter_profile
+delete mirror group_id
+delete mld_snooping multicast_vlan
+delete mld_snooping multicast_vlan_group_profile
+delete mld_snooping static_group
+delete nlb multicast_fdb
+delete nlb unicast_fdb
+delete port_group
+delete port_security_entry
+delete rspan vlan
+delete sflow analyzer_server
+delete sflow counter_poller ports
+delete sflow flow_sampler ports
+delete snmp
+delete snmp community
+delete snmp group
+delete snmp user
+delete snmp view
+delete ssl certificate
+delete stp instance_id
+delete syslog host
+delete trusted_host
+delete vlan
+delete vlan vlanid
+delete vlan_translation ports
+delete wac
+delete wred profile
+dir
+disable 802.1x
+disable aaa_server_password_encryption
+disable address_binding dhcp_snoop
+disable address_binding nd_snoop
+disable address_binding trap_log
+disable asymmetric_vlan
+disable authen_policy
+disable authen_policy_encryption
+disable authorization attributes
+disable autoconfig
+disable bpdu_protection
+disable cfm
+disable clipaging
+disable command logging
+disable community_encryption
+disable cpu_interface_filtering
+disable dhcp_local_relay
+disable dhcp_relay
+disable dhcpv6_relay
+disable erps
+disable gratuitous_arp
+disable gvrp
+disable hol_prevention
+disable igmp_snooping
+disable igmp_snooping multicast_vlan
+disable ipif
+disable ipif_ipv6_link_local_auto
+disable jumbo_frame
+disable jwac
+disable jwac forcible_logout
+disable jwac quarantine_server_monitor
+disable jwac redirect
+disable jwac udp_filtering
+disable l2protocol_tunnel
+disable lldp
+disable loopdetect
+disable mac_based_access_control
+disable mac_notification
+disable mirror
+disable mld_snooping
+disable mld_snooping multicast_vlan
+disable password encryption
+disable password_recovery
+disable pvid auto_assign
+disable qinq
+disable rspan
+disable sflow
+disable sim
+disable smtp
+disable snmp
+disable snmp authenticate_traps
+disable snmp linkchange_traps
+disable snmp traps
+disable sntp
+disable ssh
+disable ssl
+disable stp
+disable surveillance_vlan
+disable syslog
+disable telnet
+disable udp_helper
+disable vlan_trunk
+disable voice_vlan
+disable wac
+disable web
+disable wred
+download
+download sim_ms
+download ssh client_pub_key
+download ssl certificate
+dump ffs_gc_data
+enable 802.1x
+enable aaa_server_password_encryption
+enable address_binding dhcp_snoop
+enable address_binding nd_snoop
+enable address_binding trap_log
+enable admin
+enable asymmetric_vlan
+enable authen_policy
+enable authen_policy_encryption
+enable authorization attributes
+enable autoconfig
+enable bpdu_protection
+enable cfm
+enable clipaging
+enable command logging
+enable community_encryption
+enable cpu_interface_filtering
+enable dhcp_local_relay
+enable dhcp_relay
+enable dhcpv6_relay
+enable erps
+enable gratuitous_arp
+enable gvrp
+enable hol_prevention
+enable igmp_snooping
+enable igmp_snooping multicast_vlan
+enable ipif
+enable ipif_ipv6_link_local_auto
+enable jumbo_frame
+enable jwac
+enable jwac forcible_logout
+enable jwac quarantine_server_monitor
+enable jwac redirect
+enable jwac udp_filtering
+enable l2protocol_tunnel
+enable lldp
+enable loopdetect
+enable mac_based_access_control
+enable mac_notification
+enable mirror
+enable mld_snooping
+enable mld_snooping multicast_vlan
+enable password encryption
+enable password_recovery
+enable pvid auto_assign
+enable qinq
+enable rspan
+enable sflow
+enable sim
+enable smtp
+enable snmp
+enable snmp authenticate_traps
+enable snmp linkchange_traps
+enable snmp traps
+enable sntp
+enable ssh
+enable ssl
+enable stp
+enable surveillance_vlan
+enable syslog
+enable telnet
+enable udp_helper
+enable vlan_trunk
+enable voice_vlan
+enable wac
+enable web
+enable wred
+erase
+execute config
+format
+install dlms activation_code
+login
+logout
+md
+move
+no debug address_binding
+ping
+ping6
+rd
+reboot
+reconfig
+rename
+reset
+save
+show 802.1p default_priority
+show 802.1p user_priority
+show 802.1x
+show 802.1x guest_vlan
+show 802.1x user
+show aaa
+show aaa server_group
+show aaa server_host
+show access_profile
+show account
+show accounting
+show accounting service
+show acct_client
+show address_binding
+show address_binding blocked
+show address_binding dhcp_snoop
+show address_binding dhcp_snoop binding_entry
+show address_binding dhcp_snoop limit_rate
+show address_binding ip_mac
+show address_binding nd_snoop
+show address_binding nd_snoop binding_entry
+show arp_spoofing_prevention
+show arpentry
+show asymmetric_vlan
+show attack_log
+show auth_client
+show auth_diagnostics
+show auth_session_statistics
+show auth_statistics
+show authen application
+show authen parameter
+show authen server_group
+show authen server_host
+show authen_enable
+show authen_login
+show authen_policy
+show authentication
+show authentication guest_vlan
+show authentication mac_format
+show authentication ports
+show authorization
+show autoconfig
+show backup
+show bandwidth_control
+show boot_file
+show bpdu_protection
+show cfm
+show cfm fault
+show cfm linktrace
+show cfm mipccm
+show cfm mp_ltr_all
+show cfm pkt_cnt
+show cfm port
+show cfm ports
+show cfm remote_mep
+show command logging
+show command_history
+show community_encryption
+show config
+show cpu access_profile
+show cpu_filter l3_control_pkt ports
+show current_config access_profile
+show current_config egress_access_profile
+show ddm
+show ddm ports
+show device_status
+show dhcp_local_relay
+show dhcp_relay
+show dhcp_relay option_60
+show dhcp_relay option_61
+show dhcp_relay server_cvid
+show dhcpv6_relay
+show dlms license
+show dos_prevention
+show dot1v_protocol_group
+show dscp map
+show dscp trust
+show duld ports
+show eee ports
+show egress_access_profile
+show egress_flow_meter
+show environment
+show erps
+show error ports
+show ethernet_oam ports
+show execute_config
+show fdb
+show filter dhcp_server
+show filter extensive_netbios
+show filter netbios
+show filter rpc_portmapper
+show flow_meter
+show gratuitous_arp
+show greeting_message
+show gvrp
+show hol_prevention
+show igmp access_authentication ports
+show igmp_snooping
+show igmp_snooping forwarding
+show igmp_snooping group
+show igmp_snooping multicast_vlan
+show igmp_snooping multicast_vlan_group
+show igmp_snooping multicast_vlan_group_profile
+show igmp_snooping rate_limit
+show igmp_snooping static_group
+show igmp_snooping statistic counter
+show ipfdb
+show ipif
+show ipif_ipv6_link_local_auto
+show iproute
+show ipv6 nd
+show ipv6 neighbor_cache ipif
+show ipv6route
+show jumbo_frame
+show jwac
+show jwac auth_state ports
+show jwac authenticate_page
+show jwac ports
+show jwac update_server
+show jwac user
+show l2protocol_tunnel
+show lacp_port
+show led
+show limited_multicast_addr
+show link_aggregation
+show lldp
+show lldp local_ports
+show lldp mgt_addr
+show lldp ports
+show lldp remote_ports
+show lldp statistics
+show lldp statistics ports
+show lldp_med
+show lldp_med local_ports
+show lldp_med ports
+show lldp_med remote_ports
+show log
+show log_save_timing
+show log_software_module
+show loopdetect
+show loopdetect ports
+show mac_based_access_control
+show mac_based_access_control auth_state ports
+show mac_based_access_control_local
+show mac_based_vlan
+show mac_notification
+show mac_notification ports
+show max_mcast_group
+show mcast_filter_profile
+show mirror
+show mld_snooping
+show mld_snooping forwarding
+show mld_snooping group
+show mld_snooping mrouter_ports
+show mld_snooping multicast_vlan
+show mld_snooping multicast_vlan_group
+show mld_snooping multicast_vlan_group_profile
+show mld_snooping rate_limit
+show mld_snooping static_group
+show mld_snooping statistic counter
+show multicast vlan_filtering_mode
+show multicast_fdb
+show nlb fdb
+show packet ports
+show password_recovery
+show per_queue bandwidth_control
+show poe ports
+show poe system
+show port dot1v
+show port_group
+show port_security
+show port_security_entry
+show port_vlan
+show ports
+show power_saving
+show pppoe circuit_id_insertion
+show pppoe circuit_id_insertion ports
+show private_vlan
+show pvid auto_assign
+show qinq
+show qinq ignore_strip_outer_tag state
+show qinq inner_tpid
+show qinq ports
+show radius
+show rmon
+show router_ports
+show rspan
+show safeguard_engine
+show scheduling
+show scheduling_mechanism
+show serial_port
+show session
+show sflow
+show sflow analyzer_server
+show sflow counter_poller
+show sflow flow_sampler
+show sim
+show smtp
+show snmp
+show snmp community
+show snmp engineID
+show snmp groups
+show snmp host
+show snmp traps
+show snmp user
+show snmp v6host
+show snmp view
+show sntp
+show ssh algorithm
+show ssh authmode
+show ssh server
+show ssh user authmode
+show ssl
+show ssl cachetimeout
+show stack_device
+show stack_information
+show stacking_mode
+show storage_media_info
+show stp
+show stp instance
+show stp mst_config_id
+show stp ports
+show surveillance_vlan
+show switch
+show syslog
+show syslog host
+show syslog source_ipif
+show system_severity
+show tech_support
+show terminal width
+show time
+show time_range
+show traffic control
+show traffic_segmentation
+show trap source_ipif
+show trusted_host
+show udp_helper
+show utilization
+show utilization dram
+show utilization flash
+show vlan
+show vlan ports
+show vlan vlanid
+show vlan_translation
+show vlan_trunk
+show voice_vlan
+show voice_vlan lldp_med voice_device
+show voice_vlan oui
+show voice_vlan ports
+show voice_vlan voice_device
+show wac
+show wac auth_state ports
+show wac authenticate_page
+show wac ports
+show wac user
+show wred
+show wred profile
+smtp send_testmsg
+telnet
+traceroute
+traceroute6
+upload
+upload sim_ms
+upload ssh client_pub_key
+upload tech_support_toTFTP
+
