@@ -7,8 +7,21 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "ssh_connections": [
+    {
+      "host": "pve01",
+      "projects": [
+        {
+          "paths": ["/"]
+        },
+        {
+          "paths": ["/root"]
+        }
+      ]
+    }
+  ],
   "proxy": "socks5://localhost:1080",
-  "show_edit_predictions": false,
+  "show_edit_predictions": true,
   "features": {
     "edit_prediction_provider": "zed"
   },
@@ -59,5 +72,17 @@
     "mode": "system",
     "light": "One Light",
     "dark": "One Dark"
+  },
+  "languages": {
+    "Shell Script": {
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "shfmt",
+          // Change `--indent 2` to match your preferred tab_size
+          "arguments": ["--filename", "{buffer_path}", "--indent", "4", "-ci"]
+        }
+      }
+    }
   }
 }
