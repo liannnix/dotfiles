@@ -30,3 +30,6 @@
 
 # aichat API Keys
 .config/aichat/config.yaml
+
+# aerc
+.config/aerc/accounts.conf
