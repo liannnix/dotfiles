@@ -16,6 +16,7 @@ home_dir="$HOME"
 
 export PATH="$PATH:$home_dir/.radicle/bin"
 export PATH="$PATH:$home_dir/.local/bin"
+export PATH="$PATH:$home_dir/go/bin"
 
 # Set tmux title for ssh
 . "$home_dir/.scripts/set-tmux-title.sh" >/dev/null 2>&1 || true
@@ -37,3 +38,9 @@ export QT_LINUX_ACCESSIBILITY_ALWAYS_ON=1
 
 alias tmux='TERM=xterm-256color tmux'
 alias sudoedit="$home_dir/.scripts/sudoedit_autosave.sh"
+
+. "$home_dir/.api_keys.env"
+
+for file in $home_dir/.user_completions/*; do
+    [ -f "$file" ] && . "$file"
+done
