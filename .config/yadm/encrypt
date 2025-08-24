@@ -33,3 +33,6 @@
 
 # aerc
 .config/aerc/accounts.conf
+
+# API import keys
+.api_keys.env
