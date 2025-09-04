@@ -13,5 +13,5 @@
 	url = https://github.com/TheLocehiliosan/yadm.git
 [submodule "wiki"]
 	path = wiki
-	url = gitea@git.giran.cyou:liannnix/wiki.git
+	url = git@git.lian.su:wiki.git
 	branch = master
