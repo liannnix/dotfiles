@@ -44,3 +44,5 @@ alias sudoedit="$home_dir/.scripts/sudoedit_autosave.sh"
 for file in $home_dir/.user_completions/*; do
     [ -f "$file" ] && . "$file"
 done
+
+. "$home_dir/.scripts/urldecode.sh"
